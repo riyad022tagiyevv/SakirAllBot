@@ -34,31 +34,31 @@ async def cancel(event):
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**Kaptan Tagger**, Grup veya kanaldaki neredeyse tüm üyelerden bahsedebilirim ★\nDaha fazla bilgi için **/bilgi**'i tıklayın.",
+  await event.reply("** Tagger**, Grup veya kanaldaki neredeyse tüm üyelerden bahsedebilirim ★\nDaha fazla bilgi için **/bilgi**'i tıklayın.",
                     buttons=(
                       [
-                         Button.url('➕ BENİ GRUBA EKLE ➕ ', 'http://t.me/KaptanTaggerBot?startgroup=a')
+                         Button.url('➕ BENİ GRUBA EKLE ➕ ', 'http://t.me/Tg_tagbot?startgroup=a')
                       ],
                       [
-                         Button.url('📣 Grubumuz', 'https://t.me/BestClanGlobal'),
-                         Button.url('👮Developer', 'https://t.me/kaptandcbot'),
-                         Button.url('✨Resmi Kanal', 'https://t.me/BestClanOfficial'),
+                         Button.url('📣 Grubumuz', 'https://t.me/PatronlarSohbet_TR'),
+                         Button.url('👮Developer', 'https://t.me/Suskunlarasistan'),
+                         Button.url('✨Resmi Kanal', 'https://t.me/SakirBey2'),
                       ]
                     ),
                     link_preview=False
                    )
 @client.on(events.NewMessage(pattern="^/bilgi$"))
 async def help(event):
-  helptext = "**Kaptan Tagger'un Yardım Menüsü**\n\nKomut: /utag \n  Bu komutu, başkalarına bahsetmek istediğiniz metinle birlikte kullanabilirsiniz. /etag  \n emoji ile etiketleme. \n`Örnek: /utag Günaydın!`  \nBu komutu yanıt olarak kullanabilirsiniz. herhangi bir mesaj Bot, yanıtlanan iletiye kullanıcıları etiketleyecek."
+  helptext = "** Tagger'un Yardım Menüsü**\n\nKomut: /utag \n  Bu komutu, başkalarına bahsetmek istediğiniz metinle birlikte kullanabilirsiniz. /etag  \n emoji ile etiketleme. \n`Örnek: /utag Günaydın!`  \nBu komutu yanıt olarak kullanabilirsiniz. herhangi bir mesaj Bot, yanıtlanan iletiye kullanıcıları etiketleyecek."
   await event.reply(helptext,
                     buttons=(
                       [
-                         Button.url('➕ BENİ GRUBA EKLE ➕', 'http://t.me/KaptanTaggerBot?startgroup=a')
+                         Button.url('➕ BENİ GRUBA EKLE ➕', 'http://t.me/Tg_tagbot?startgroup=a')
                       ],
                       [
-                         Button.url('📣 Grubumuz', 'https://t.me/BestClanGlobal'),
-                         Button.url('👮Developer', 'https://t.me/kaptandcbot'),
-                         Button.url('✨Resmi Kanal', 'https://t.me/BestClanOfficial'),
+                         Button.url('📣 Grubumuz', 'https://t.me/PatronlarSohbet_TR'),
+                         Button.url('👮Developer', 'https://t.me/Suskunlarasistan'),
+                         Button.url('✨Resmi Kanal', 'https://t.me/SakirBey2'),
                       ]
                     ),
                     link_preview=False
