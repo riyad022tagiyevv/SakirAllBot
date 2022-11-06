@@ -49,7 +49,7 @@ async def start(event):
                    )
 @client.on(events.NewMessage(pattern="^/bilgi$"))
 async def help(event):
-  helptext = "** Tagger'un Yardım Menüsü**\n\nKomut: /all \n  Bu komutu, başkalarına bahsetmek istediğiniz metinle birlikte kullanabilirsiniz. /etag  \n emoji ile etiketleme. \n`Örnek: /utag Günaydın!`  \nBu komutu yanıt olarak kullanabilirsiniz. herhangi bir mesaj Bot, yanıtlanan iletiye kullanıcıları etiketleyecek."
+  helptext = "** Tagger'un Yardım Menüsü**\n\nKomut: /utag \n  Bu komutu, başkalarına bahsetmek istediğiniz metinle birlikte kullanabilirsiniz. /etag  \n emoji ile etiketleme. \n`Örnek: /utag Günaydın!`  \nBu komutu yanıt olarak kullanabilirsiniz. herhangi bir mesaj Bot, yanıtlanan iletiye kullanıcıları etiketleyecek."
   await event.reply(helptext,
                     buttons=(
                       [
@@ -125,7 +125,7 @@ async def mentionall(event):
         usrtxt = ""
 
 # Emoji Modulu (aykhan_s)
-@client.on(events.NewMessage(pattern="^/itag ?(.*)"))
+@client.on(events.NewMessage(pattern="^/stag ?(.*)"))
 async def etag(event):
   global anlik_calisan
   if event.is_private:
