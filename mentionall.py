@@ -65,6 +65,7 @@ async def help(event):
                          Button.url('📣 Grubumuz', 'https://t.me/PatronlarSohbet_TR'),
                          Button.url('👮Developer', 'https://t.me/Suskunlarasistan'),
                          Button.url('✨Resmi Kanal', 'https://t.me/SakirBey2'),
+                         Button.url('Komutlar', callback_data='/komutlar'),
                       ]
                     ),
                     link_preview=False
@@ -313,6 +314,12 @@ async def mentionall(event):
 async def cancel(event):
   global tekli_calisan
   tekli_calisan.remove(event.chat_id)
+    
+    
+@client.on(events.NewMessage(pattern='/komutlar'))
+async def handler(event):
+	
+    await event.reply('**Tagger Botun Komutlar Menüsü** \n\``/tektag - Tekli Etiketler.`` \n``/all - 5 li Etiket Atar `` \n``/etag - Emojili Tag Atar`` \n``/stag - Söz İle Etiket Atar.``  ✨')
 
 print(">> Bot çalıyor merak etme 🚀 @SakirBey1 bilgi alabilirsin <<")
 client.run_until_disconnected()
