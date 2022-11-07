@@ -65,7 +65,7 @@ async def help(event):
                          Button.url('📣 Grubumuz', 'https://t.me/PatronlarSohbet_TR'),
                          Button.url('👮Developer', 'https://t.me/Suskunlarasistan'),
                          Button.url('✨Resmi Kanal', 'https://t.me/SakirBey2'),
-                         Button.url('Komutlar', callback_data='/komutlar'),
+                         Button.url('Komutlar', '/komutlar'),
                       ]
                     ),
                     link_preview=False
