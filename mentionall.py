@@ -309,5 +309,10 @@ async def mentionall(event):
         usrnum = 0
         usrtxt = ""
 
+@client.on(events.NewMessage(pattern='^(?i)/cancel'))
+async def cancel(event):
+  global tekli_calisan
+  tekli_calisan.remove(event.chat_id)
+
 print(">> Bot çalıyor merak etme 🚀 @SakirBey1 bilgi alabilirsin <<")
 client.run_until_disconnected()
